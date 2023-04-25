@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Hola() {
+export default function Hola(props) {
   return (
     <div>
-      <h2>Hola cariño</h2>
+      <p>Hola mi nombre es {props.userInfo.nombre}, tengo {props.userInfo.edad} y mi color favorito es el {props.userInfo.color}</p>
     </div>
   )
 }
